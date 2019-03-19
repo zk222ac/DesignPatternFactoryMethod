@@ -10,12 +10,18 @@ namespace DesignPatternFactoryMethod
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            // created an instance of SavingAccountFactory and set as type ICreditUnionFactory
+            var factory = new SavingAccountFactory() as ICreditUnionFactory;
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            // call the city saving account object instance
+            var cityAcct = factory.GetSavingsAccount("city-321");
+            // call the national saving object instance 
+            var nationalAcct = factory.GetSavingsAccount("national-321");
+
+            Console.WriteLine($"My City balance is {cityAcct.Balance}" +
+                              $" and National Balance is {nationalAcct.Balance}");
+
+            Console.ReadKey();
         }
     }
 }

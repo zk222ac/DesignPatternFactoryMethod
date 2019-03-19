@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitySavingAccounts.cs" />
+    <Compile Include="SavingAccountFactory.cs" />
+    <Compile Include="ICreditUnionFactory.cs" />
+    <Compile Include="SavingsAccount.cs" />
+    <Compile Include="NationalSavingAccounts.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
