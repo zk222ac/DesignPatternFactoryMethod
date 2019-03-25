@@ -1,4 +1,6 @@
 ﻿using System;
+using DesignPatternFactoryMethod.ConcreteProduct;
+using DesignPatternFactoryMethod.Product;
 
 namespace DesignPatternFactoryMethod
 {

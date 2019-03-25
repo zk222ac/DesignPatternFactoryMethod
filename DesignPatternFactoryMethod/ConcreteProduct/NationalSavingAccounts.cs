@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatternFactoryMethod.Product;
 
-namespace DesignPatternFactoryMethod
+namespace DesignPatternFactoryMethod.ConcreteProduct
 {
     // Concrete product ---> CitySavingAccounts which inherit saving account
     public class NationalSavingAccounts : SavingsAccount
@@ -12,6 +8,11 @@ namespace DesignPatternFactoryMethod
         public NationalSavingAccounts()
         {
             Balance = 2000;
+        }
+
+        public override decimal GetBalance()
+        {
+            return Balance;
         }
     }
 }

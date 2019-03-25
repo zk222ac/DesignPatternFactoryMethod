@@ -42,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CitySavingAccounts.cs" />
-    <Compile Include="SavingAccountFactory.cs" />
-    <Compile Include="ICreditUnionFactory.cs" />
-    <Compile Include="SavingsAccount.cs" />
-    <Compile Include="NationalSavingAccounts.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ConcreteProduct\CitySavingAccounts.cs" />
+    <Compile Include="ConcreteCreator%28Factory%29\SavingAccountFactory.cs" />
+    <Compile Include="Creator%28Factory%29\ICreditUnionFactory.cs" />
+    <Compile Include="Product\SavingsAccount.cs" />
+    <Compile Include="ConcreteProduct\NationalSavingAccounts.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
